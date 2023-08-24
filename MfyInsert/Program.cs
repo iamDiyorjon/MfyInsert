@@ -1,8 +1,8 @@
 ﻿
 using OfficeOpenXml;
 
-string path = @"C:\Users\User\Desktop\mfy.xlsx";
-string scrptPath = @"C:\Users\User\Desktop\IHMA\ihma_adm_backend\src\libs\Ihma.Adm.DataLayer.PgSql\Scripts\0094 ADM_MNL insert into INFO_MFY.sql";
+string path = @"";
+string scrptPath = @"";
 FileInfo fileInfo = new FileInfo(path);
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 List<string> query = new List<string>();
