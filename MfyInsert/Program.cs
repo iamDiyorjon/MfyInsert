@@ -24,6 +24,8 @@ using (ExcelPackage package = new ExcelPackage(fileInfo))
         var value = @$"INSERT INTO ADM_MNL.INFO_MFY (ID, ORDER_CODE, CODE, SHORT_NAME, FULL_NAME, INN, REGION_ID, DISTRICT_ID, SECTOR_ID, STATE_ID) 
         VALUES({row - 1}, '00{row - 1}', '00{row - 1}', N'{name}', N'{name}', {inn},{region},{district},{sector},1);";
 
+
+            
         query.Add(value);
     }
 }
