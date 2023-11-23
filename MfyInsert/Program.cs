@@ -28,5 +28,5 @@ using (ExcelPackage package = new ExcelPackage(fileInfo))
     }
 }
 File.WriteAllLines(scrptPath, query.ToArray());
-Console.WriteLine();
+Console.WriteLine("Smth");
 
