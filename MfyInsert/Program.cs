@@ -7,7 +7,7 @@ FileInfo fileInfo = new FileInfo(path);
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 List<string> query = new List<string>();
 
-using (ExcelPackage package = new ExcelPackage(fileInfo))
+usin (ExcelPackage package = new ExcelPackage(fileInfo))
 {
     ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
     int rowCount = worksheet.Dimension.Rows;
