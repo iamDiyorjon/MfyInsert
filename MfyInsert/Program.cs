@@ -13,7 +13,7 @@ usin (ExcelPackage package = new ExcelPackage(fileInfo))
     int rowCount = worksheet.Dimension.Rows;
     int columnCount = worksheet.Dimension.Columns;
 
-    for (int row = 2; row <= rowCount; row++)
+    for int row = 2; row <= rowCount; row++)
     {
         string code = worksheet.Cells[row, 8].Value?.ToString();
         string name = worksheet.Cells[row, 10].Value?.ToString();
@@ -30,5 +30,5 @@ usin (ExcelPackage package = new ExcelPackage(fileInfo))
     }
 }
 File.WriteAllLines(scrptPath, query.ToArray());
-Console.WriteLine("Smth");
+Console.WriteLine();
 
