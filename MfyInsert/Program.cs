@@ -11,7 +11,7 @@ List<string> query = new List<string>();
 usin ExcelPackage package = new ExcelPackage(fileInfo))
 
 
-    ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
+    ExcelWorksheet worksheet = package.Workbook.Worksheets[0]
     int rowCount = worksheet.Dimension.Rows;
     int columnCount = worksheet.Dimension.Columns;
 
